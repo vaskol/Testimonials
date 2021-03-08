@@ -1,0 +1,15 @@
+  footer {
+    color: $dark_blue;
+    font-size: $font-sm;
+    .attribution {
+        a {
+            text-decoration-line: none;
+            &:visited {
+                color: $dark_blue;
+            }
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}

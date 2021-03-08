@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link rel="stylesheet" href="app\scss\style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <title>Frontend Mentor | Testimonial Landing Page</title>
+    </head>
+    <body style="background-image: url('images/pattern-bg.svg'); background-repeat: no-repeat; background-position: center right; background-size: 61vw;">
+        <section class="section-testimonials flex flex-jc-c flex-ai-c flex-f-w" style="background-image: url('images/pattern-curve.svg'); background-repeat: no-repeat; background-position: bottom left; background-size: 50vw;">
+            <div class="slider">
+                <!-- Slides -->
+                <div class="slider__slides">
+                    <div class="slider__slide slider__slide--1">
+                        <figure class="testimonial slider__slide-content">
+                            <blockquote class="testimonial__text">
+                                <p class="testimonial__quote">
+                                    “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
+                                </p>
+                                <cite class="testimonial__cite">
+                                    <span class="testimonial__cite--name">Tanya Sinclair </span>
+                                    <span class="testimonial__cite--role">UX Engineer</span>
+                                </cite>
+                            </blockquote>
+                            <div class="testimonial__img">
+                                <img class="testimonial__photo" src="images/image-tanya.jpg" alt="Tanya Sinclair" />
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="slider__slide slider__slide--2">
+                        <figure class="testimonial slider__slide-content">
+                            <blockquote class="testimonial__text">
+                                <p class="testimonial__quote">
+                                    “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.
+                                    ”
+                                </p>
+                                <cite class="testimonial__cite">
+                                    <span class="testimonial__cite--name">John Tarkpor </span>
+                                    <span class="testimonial__cite--role">Junior Front-end Developer</span>
+                                </cite>
+                            </blockquote>
+                            <div class="testimonial__img">
+                                <img class="testimonial__photo" src="images/image-john.jpg" alt="John Tarkpor" />
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="slider__buttons">
+                    <div class="slider__button slider__button--prev">
+                        <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                            <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" />
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                            <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <footer>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Vasiliki Kollia</a>.
+</div>
+</footer>
+
+        <script src="app/js/slider.js"></script>
+    </body>
+</html>

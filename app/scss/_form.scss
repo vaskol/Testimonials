@@ -1,0 +1,201 @@
+.section-testimonials {
+  height: inherit;
+  padding: 5 rem;
+  background-image: url("images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50vw;
+}
+
+.slider {
+  max-width: 144rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  //FLEX OPOY DEN ALLAZEI TO AFHNO OPWS EXEI
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__slides {
+      width: 100%;
+      display: flex;
+  }
+
+  &__slide {
+      flex: 1 0 100%;
+      margin-right: 50%;
+
+      // &:nth-child(2) {
+      // 	& > figure {
+      // 		&:nth-child(1) {
+      // 			background-image: url("images/pattern-quotes.svg");
+      // 			background-repeat: no-repeat;
+      // 			background-position-x: 150px;
+      // 			background-size: 10vw;
+      // 		}
+      // 	}
+      // }
+      //  &:nth-child(2){
+      //       > figure:nth-child(1) {
+      //        > blockquote:nth-child(1){
+      //         > p:nth-child(1) {
+      //             background-image: url("images/pattern-quotes.svg");
+      //             background-repeat: no-repeat;
+      //         }
+      //       }
+      //     }
+      //   }
+      // @include breakpoint-up(medium){
+      //   flex: 1 0 100%;
+      // }
+  }
+
+  &__slide-content {
+      //FLEX
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      @include breakpoint-down(medium) {
+          flex-direction: column-reverse;
+      }
+  }
+
+  &__buttons {
+      @include breakpoint-up(large) {
+          // flex: 0 0 auto;
+
+          // box-shadow:$box-shadow-2;
+          display: flex;
+          position: absolute;
+          bottom: 1.5%;
+          left: 77%;
+          width: 11.2rem;
+          height: 5.6rem;
+      }
+
+      @include breakpoint-down(medium) {
+          top: 54vw;
+          position: absolute;
+          display: flex;
+          width: 5.2rem;
+          height: 2.6rem;
+      }
+  }
+
+  &__button {
+      flex: 0 0 50%;
+      background-color: $white;
+      cursor: pointer;
+      @include breakpoint-down(medium) {
+          left: 50px;
+      }
+
+      &--prev {
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+
+          &:hover {
+              background: $opaque;
+          }
+      }
+
+      &--next {
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+          &:hover {
+              background: $opaque;
+          }
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  &__button-icon {
+      stroke: $dark_blue;
+      transition: stroke 0.2s;
+  }
+
+  &__button:hover &__button-icon {
+      stroke: $blue;
+  }
+
+  &__button:active &__button-icon {
+      stroke: $blue;
+  }
+}
+
+//========== TESTIMONIAL ==========
+.testimonial {
+  //width: 100%;
+  // height: 85vh;
+
+  &__text {
+      color: $dark_blue;
+      flex: 0 1 100%;
+      margin-right: -5.8%;
+      z-index: 1;
+      position: relative;
+
+      @include breakpoint-down(medium) {
+          flex-direction: column-reverse;
+          margin: 0;
+      }
+  }
+
+  &__quotation-marks {
+      position: absolute;
+      top: -151px;
+      left: 74px;
+  }
+
+  &__quote {
+      font-size: $font-sm;
+      font-weight: 300;
+      line-height: 1.375;
+      margin-bottom: 3.2rem;
+  }
+
+  &__cite {
+      font-size: $font-med;
+      display: flex;
+      flex-direction: row;
+
+      // @include breakpoint-up(medium){
+      //   font-size: 1.6rem;
+      // }
+
+      @include breakpoint-down(medium) {
+          flex-direction: column;
+      }
+
+      &--name {
+          font-weight: 700;
+          margin-right: 8px;
+      }
+
+      &--role {
+          color: $grayish_blue;
+      }
+  }
+
+  &__img {
+      width: 80%;
+      max-width: 500px;
+  }
+
+  &__photo {
+      width: 100%;
+      // box-shadow: $box-shadow-1;
+      border-radius: 5px;
+
+      @include breakpoint-up(medium) {
+          width: 100%;
+      }
+  }
+}
+
